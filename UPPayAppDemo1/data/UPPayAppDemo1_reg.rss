@@ -1,0 +1,27 @@
+/*
+============================================================================
+ Name		: UPPayAppDemo1.rss
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file contains the application registration resource.
+============================================================================
+*/
+
+#include "UPPayAppDemo1.hrh"
+#include "UPPayAppDemo1.rls"
+#include <appinfo.rh>
+#include <uppayappdemo1_0xe55dc470.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 _UID3
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file="UPPayAppDemo1_0xe55dc470";
+	localisable_resource_file =  qtn_loc_resource_file_1;
+	localisable_resource_id = R_LOCALISABLE_APP_INFO;
+
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}
+

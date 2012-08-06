@@ -1,0 +1,76 @@
+/*
+============================================================================
+ Name		: UPPayAppDemo1.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for UPPayAppDemo1.
+============================================================================
+*/
+
+MACRO _HELP_AVAILABLE_
+
+TARGET			UPPayAppDemo1_0xe55dc470.exe
+TARGETTYPE		exe
+UID		  0x100039CE 0xe55dc470
+EPOCSTACKSIZE	  0x5000
+
+EPOCHEAPSIZE 0x14000 0x2000000
+SOURCEPATH		..\src
+SOURCE			UPPayAppDemo1.cpp
+SOURCE			UPPayAppDemo1Application.cpp
+SOURCE			UPPayAppDemo1AppView.cpp
+SOURCE			UPPayAppDemo1AppUi.cpp
+SOURCE			UPPayAppDemo1Document.cpp
+
+SOURCEPATH		..\data
+
+START RESOURCE	UPPayAppDemo1.rss
+HEADER
+TARGET UPPayAppDemo1_0xe55dc470
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	UPPayAppDemo1_reg.rss
+TARGET UPPayAppDemo1_0xe55dc470_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+USERINCLUDE	   ..\inc
+USERINCLUDE    ..\help
+
+
+SYSTEMINCLUDE	 \epoc32\include
+SYSTEMINCLUDE  \epoc32\include\ecom
+SYSTEMINCLUDE \epoc32\include\libc
+LIBRARY		   euser.lib
+LIBRARY		   apparc.lib
+LIBRARY		   cone.lib
+LIBRARY		   eikcore.lib
+LIBRARY		   avkon.lib
+LIBRARY		   commonengine.lib
+LIBRARY		   efsrv.lib 
+LIBRARY		   estor.lib
+LIBRARY        aknnotify.lib
+LIBRARY        hlplch.lib
+
+LIBRARY 	   browserengine.lib 
+LIBRARY  		gdi.lib bitgdi.lib
+LIBRARY 		apmime.lib apgrfx.lib eikcoctl.lib commonui.lib
+LIBRARY 		libc.lib
+LIBRARY			estlib.lib charconv.lib
+STATICLIBRARY	ecrt0.lib
+LIBRARY         aknskins.lib esock.lib esocksvr.lib commdb.lib http.lib bafl.lib 
+LIBRARY		    flogger.lib inetprotutil.lib eikctl.lib ecom.lib 
+
+ 
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xe55dc470
+CAPABILITY	  	  ReadUserData ReadDeviceData NetworkServices WriteDeviceData WriteUserData
+
+DEBUGGABLE_UDEBONLY
+// End of File
+SOURCEPATH ..\src
+SOURCE BrCtlSampleAppCommandObserver.cpp BrCtlSampleAppContainer.cpp BrCtlSampleAppLayoutObserver.cpp BrCtlSampleAppLinkResolver.cpp BrCtlSampleAppLoadEventObserver.cpp BrCtlSampleAppSoftkeysObserver.cpp BrCtlSampleAppSpecialLoadObserver.cpp BrCtlSampleAppStateChangeObserver.cpp MVIWebClientObserver.cpp WebClientEngine.cpp UPPayHttpConnection.cpp

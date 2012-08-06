@@ -1,0 +1,37 @@
+; Installation file for UPPayAppDemo1 application
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"UPPayAppDemo1"},(0xe55dc470),1,0,0
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;Supports Series 60 v 5.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"$(EPOCROOT)epoc32\release\$(PLATFORM)\$(TARGET)\UPPayAppDemo1_0xe55dc470.exe"		-"!:\sys\bin\UPPayAppDemo1_0xe55dc470.exe"
+"$(EPOCROOT)epoc32\data\z\resource\apps\uppayappdemo1_0xe55dc470.rsc"		-"!:\resource\apps\UPPayAppDemo1_0xe55dc470.rsc"
+"$(EPOCROOT)epoc32\data\z\private\10003a3f\apps\uppayappdemo1_0xe55dc470_reg.rsc"	-"!:\private\10003a3f\import\apps\UPPayAppDemo1_0xe55dc470_reg.rsc"
+"$(EPOCROOT)epoc32\data\z\resource\apps\uppayappdemo1_0xe55dc470.mif" -"!:\resource\apps\UPPayAppDemo1_0xe55dc470.mif"
+"..\help\uppayappdemo1_0xe55dc470.hlp"							 -"!:\resource\help\UPPayAppDemo1_0xe55dc470.hlp"
+
+; Add any installation notes if applicable
+;"UPPayAppDemo1.txt"		-"!:\private\e55dc470\UPPayAppDemo1.txt"
+
+;required for application to be covered by backup/restore facility 
+"..\sis\backup_registration.xml"		-"!:\private\e55dc470\backup_registration.xml"
